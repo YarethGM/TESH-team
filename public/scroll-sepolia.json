@@ -1,0 +1,13 @@
+{
+    "chainName": "Scroll Sepolia",
+    "chainId": "534351",
+    "rpcUrls": [
+        "https://sepolia-rpc.scroll.io/"
+    ],
+    "iconUrls": [
+        "https://scroll.io/static/media/ScrollLogo.0cfb5e49.svg"
+    ],
+    "blockExplorerUrls": [
+        "https://sepolia.scrollscan.com/"
+    ]
+}

@@ -1,0 +1,8 @@
+# Ejemplo de flujo:
+1. Login de alumno
+2. Registro consumiendo tokens
+3. Registro de alumno completado
+4. Inicio de sesion de alumno
+5. Login consumiendo tokens
+6. Adeudo de tokens de alumno
+7. Verificación en Scrollscan
