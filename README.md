@@ -28,3 +28,8 @@ Pasos para ejecutar:
 8. npm run dev
 
 9. http://localhost:5173/
+
+
+CONTRATO: 0x20868f893a6E2704351B53B7271E76638504aC0E
+
+URL Scroll-etherscan: https://sepolia.scrollscan.com/address/0x20868f893a6E2704351B53B7271E76638504aC0E
