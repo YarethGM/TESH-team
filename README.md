@@ -1,39 +1,28 @@
-# 🧪 LabTokens - Gestión de Acceso a Laboratorios con Tokens en Scroll
+Plataforma LabChain
 
-![Scroll Logo](https://scroll.io/static/media/ScrollLogo.0cfb5e49.svg)  
-*Solución Web3 para controlar el acceso a laboratorios académicos usando tokens en Scroll zkEVM*
+Un sistema descentralizado que:
+✔ Registra alumnos (solo administradores)
+✔ Asigna 10 tokens iniciales a cada alumno
+✔ Resta 2 tokens por sesión de laboratorio
+✔ Verifica saldos en la blockchain (Scroll)
 
-## 🚀 Demo Rápida
-[![Ver Demo](https://img.shields.io/badge/Ver-Demo_Live-green?style=for-the-badge)](https://tudemo.com)  
-[![Scroll Testnet](https://img.shields.io/badge/Blockchain-Scroll_Sepolia-blue?style=for-the-badge)](https://sepolia.scrollscan.com)
+Problema que resuelve:
+Evita el acceso no autorizado a laboratorios y lleva un registro transparente del uso.
 
-## 📌 Problemática
-- **Acceso descontrolado** a laboratorios en instituciones educativas.
-- **Falta de transparencia** en el uso de recursos compartidos.
-- **Sistemas centralizados** vulnerables a manipulación.
+Pasos para ejecutar:
 
-## 💡 Solución
-Sistema descentralizado que:
-1. Asigna **10 tokens iniciales** a cada alumno.
-2. **Resta 2 tokens** por sesión de laboratorio.
-3. Datos almacenados en **Scroll zkEVM** (bajo costo y escalable).
+1. brew install node
 
-## 🛠️ Tecnologías Usadas
-| Tecnología | Uso |
-|------------|-----|
-| ![Scroll](https://scroll.io/favicon.ico) Scroll zkEVM | L2 para transacciones económicas |
-| ![Solidity](https://soliditylang.org/images/logo.svg) Solidity | Contrato `Alumnos.sol` |
-| ![React](https://reactjs.org/favicon.ico) React + Vite | Frontend dinámico |
-| ![Ethers](https://ethers.org/favicon.ico) Ethers.js | Conexión a blockchain |
+2. npm create vite@latest lab-tokens-dapp --template react
 
-## 📦 Estructura del Proyecto
-```bash
-.
-├── contracts/          # Smart Contracts
-│   ├── src/
-│   │   └── Alumnos.sol # Lógica de tokens
-├── src/                # Frontend
-│   ├── components/     # UI
-│   │   ├── Login.jsx   # Autenticación
-│   │   └── RegistrarAlumno.jsx # Panel admin
-└── foundry.toml        # Config. despliegue
+3. npm install ethers @metamask/sdk react-icons dotenv
+
+4. curl -L https://foundry.paradigm.xyz | bash
+
+5. foundryup
+
+6. forge init contracts
+
+7. forge create --rpc-url https://sepolia-rpc.scroll.io/ --private-key tu_llave_privada_sin_0x src/Alumnos.sol:Alumnos
+
+8. npm run dev
