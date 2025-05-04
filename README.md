@@ -26,3 +26,5 @@ Pasos para ejecutar:
 7. forge create --rpc-url https://sepolia-rpc.scroll.io/ --private-key tu_llave_privada_sin_0x src/Alumnos.sol:Alumnos
 
 8. npm run dev
+
+9. http://localhost:5173/
